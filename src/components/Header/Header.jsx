@@ -8,7 +8,7 @@ import Tab from '../Tab/Tab.jsx'
 import ButtonIcon from '../ButtonIcon/ButtonIcon.jsx'
 
 // React
-import { useNavigate, Link} from 'react-router-dom'; 
+import { useNavigate, Link } from 'react-router-dom'; 
 import { useState, useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext.jsx';
 
@@ -21,7 +21,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 
 // Assets
-import siteLogo from '../../assets/index.js'
+import assets from '../../assets/site/index.js'
 
 export default function Header() {
     const navigate = useNavigate();
@@ -38,7 +38,7 @@ export default function Header() {
             <Wrapper id="header">
                 <div className="navigation-content">
                     <div className="site-name">
-                        <img className="site-logo" src={!darkMode ? siteLogo.light : siteLogo.dark} alt="Site Logo" />
+                        <img className="site-logo" src={!darkMode ? assets.siteLogo.light : assets.siteLogo.dark} alt="Site Logo" />
                         <Link to="/" className="text-l link-plain">Nathapong Nurae</Link>
                     </div>
                     {/* Desktop Menu List */}

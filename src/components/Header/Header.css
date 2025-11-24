@@ -1,9 +1,10 @@
 .navigation{
     display: flex;
+    top: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     z-index: 20;
     width: 100%;
     background-color: var(--surface-translucent);

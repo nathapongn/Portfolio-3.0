@@ -2,7 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: var(--radius-s);
 }
+
+.tab-container:hover{
+    background-color: var(--surface-0-hover);
+}
+
 .tab{
     border: none;
     background-color: transparent;
@@ -13,6 +19,9 @@
     justify-content: center;
     color: var(--text-neutral-secondary);
 }
+.tab:hover{
+    cursor: pointer;
+}
 
 .tab-indicator{
     width: 0px;
@@ -22,9 +31,6 @@
     transition: 200ms ease-in-out;
 }
 
-.tab:hover{
-    cursor: pointer;
-}
 .tab:hover + .tab-indicator{
     width: 20px;
     background-color: var(--text-neutral-placeholder);

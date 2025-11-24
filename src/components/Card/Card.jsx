@@ -1,16 +1,25 @@
 import './Card.css'
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext.jsx";
 
 // MUI Icons
 import Icon from '@mui/material/Icon';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-export default function Card({ children = "Title", description = "Description", modeSupport = false, thumbnailType = "image", thumbnailSrc, alt }) {
+export default function Card({ children = "Title", description = "Description", modeSupport = false, thumbnailType = "image", lightSrc, darkSrc, gradient = "false", gradientSrc, alt }) {
+    const { darkMode } = useContext(ThemeContext);
+    
     return(
         <>
             <div className="card">
                 <div className="card-thumbnail">
-                    {thumbnailType === "video" ? (<video src={thumbnailSrc} autoPlay loop muted playsInline></video>) : (<img src={thumbnailSrc} alt={alt} />) }
+                    {thumbnailType === "video" ? 
+                    (<video src={darkMode ? (darkSrc || lightSrc) : lightSrc} autoPlay loop muted playsInline></video>) 
+                    : 
+                    (<img src={darkMode ? (darkSrc || lightSrc) : lightSrc} alt={alt} />) 
+                    }
+                    {gradient === true && <img className="card-thumbnail-gradient" src={gradientSrc} />}
                 </div>
                 <div className="card-footer">
                     <div className="card-footer-label">
