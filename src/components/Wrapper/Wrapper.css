@@ -1,0 +1,18 @@
+.wrapper{
+    max-width: 1280px;
+    padding: 0 var(--content-padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper.column{
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    #header{
+        padding-right: var(--spacing-xxs);
+    }
+}
