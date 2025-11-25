@@ -7,13 +7,13 @@ import Icon from '@mui/material/Icon';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-export default function Card({ children = "Title", description = "Description", modeSupport = false, thumbnailType = "image", lightSrc, darkSrc, gradient = "false", gradientSrc, alt }) {
+export default function Card({ children = "Title", description = "Description", modeSupport = false, thumbnailType = "image", lightSrc, darkSrc, gradient = "false", gradientSrc, thumbnailClass, alt }) {
     const { darkMode } = useContext(ThemeContext);
     
     return(
         <>
             <div className="card">
-                <div className="card-thumbnail">
+                <div className={`card-thumbnail ${thumbnailClass}`}>
                     {thumbnailType === "video" ? 
                     (<video src={darkMode ? (darkSrc || lightSrc) : lightSrc} autoPlay loop muted playsInline></video>) 
                     : 

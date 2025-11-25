@@ -31,6 +31,7 @@ export default function Portfolio() {
                         thumbnailType="video" 
                         darkSrc={assets.nimbusDark}
                         lightSrc={assets.nimbusLight}
+                        thumbnailClass="nimbus"
                         >Nimbus
                         </Card>
 
@@ -40,6 +41,7 @@ export default function Portfolio() {
                         thumbnailType="video" 
                         darkSrc={assets.flintDark}
                         lightSrc={assets.flintLight}
+                        thumbnailClass="flint"
                         >Flint
                         </Card>
 
@@ -49,6 +51,7 @@ export default function Portfolio() {
                         lightSrc={assets.amperLight}
                         gradient={true}
                         gradientSrc={assets.amperGradient}
+                        thumbnailClass="amper"
                         >Amper
                         </Card>
                         <Card 
@@ -57,6 +60,7 @@ export default function Portfolio() {
                         lightSrc={assets.lmwn}
                         gradient={true}
                         gradientSrc={assets.lmwnGradient}
+                        thumbnailClass="lmwn"
                         >LINE MAN Wongnai
                         </Card>
                     </div>

@@ -10,7 +10,6 @@
     height: auto; /* allow dynamic height */
     transition: min-height var(--transition-2), opacity var(--transition-2);
 }
-
 .card:hover{
     cursor: pointer;
     box-shadow: 0px 18px 36px -18px rgba(0,0,0,0.1),0px 30px 45px -30px rgba(50,50,93,0.15);
@@ -43,39 +42,33 @@
 .card:hover .card-thumbnail {
     flex: 0.99;
 }
-
 .card-thumbnail video, img {
     width: 100%;
     height: auto;
     z-index: 2;
 }
-
 .card-thumbnail-gradient{
     opacity: 0;
     height: 100%;
     position: absolute;
     z-index: 1;
 }
-
 .card-footer{
     display: flex;
     flex-direction: column;
     padding: var(--spacing-l) var(--spacing-l) var(--spacing-xxs) var(--spacing-l);
 }
-
 .card-footer-label{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xxs);
 }
-
 .card-title{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: var(--spacing-xxs);
 }
-
 .card-footer-link{
     min-height: 0;
     opacity: 0;
@@ -85,15 +78,19 @@
     align-items: center;
     transition: min-height var(--transition-2), opacity var(--transition-2);
 }
-
 .card-footer-link:hover .read-more-icon{
     transform: translateX(6px);
     transition: var(--transition-2);
 }
-
 .read-more-icon{
     transform: translateX(-6px);
     opacity: 0;
     transition: all var(--transition-2);
 }
-
+/* Custom Styling */
+.card-thumbnail.nimbus{
+    padding: var(--spacing-xl);
+}
+.card-thumbnail.amper{
+    align-items: flex-end;
+}
