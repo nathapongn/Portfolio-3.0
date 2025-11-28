@@ -13,15 +13,17 @@ import { Eclipse, ArrowRight } from 'lucide-react';
 
 export default function Card({ children = "Title", description = "Description", modeSupport = false, onClick, thumbnailType = "image", lightSrc, darkSrc, gradient = "false", gradientSrc, thumbnailClass, alt }) {
     const { darkMode } = useContext(ThemeContext);
+
+    const mediaSrc = (darkMode ? (darkSrc || lightSrc) : lightSrc);
     
     return(
         <>
             <a className="card" onClick={onClick}>
                 <div className={`card-thumbnail ${thumbnailClass}`}>
                     {thumbnailType === "video" ? 
-                    (<video src={darkMode ? (darkSrc || lightSrc) : lightSrc} autoPlay loop muted playsInline></video>) 
+                    (<video src={mediaSrc} autoPlay loop muted playsInline></video>) 
                     : 
-                    (<img src={darkMode ? (darkSrc || lightSrc) : lightSrc} alt={alt} />) 
+                    (<img src={mediaSrc} alt={alt} />) 
                     }
                     {gradient === true && <img className="card-thumbnail-gradient" src={gradientSrc} />}
                 </div>

@@ -15,10 +15,10 @@ export default function Project() {
         <Suspense fallback={<Loading />}>
             <Routes>
                 <Route path="/" element={<Portfolio />}/>
-                <Route path="project/nimbus" element={<Nimbus />}/>
-                <Route path="project/amper" element={<Amper />}/>
-                <Route path="project/flint" element={<Flint />}/>
-                <Route path="project/lmwn" element={<LMWN />}/>
+                <Route path="/nimbus" element={<Nimbus />}/>
+                <Route path="/amper" element={<Amper />}/>
+                <Route path="/flint" element={<Flint />}/>
+                <Route path="/lmwn" element={<LMWN />}/>
             </Routes>
         </Suspense>
     )
