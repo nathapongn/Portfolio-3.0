@@ -9,12 +9,13 @@ const Nimbus = lazy(() => import('../pages/projects/Nimbus.jsx'));
 const Amper = lazy(() => import('../pages/projects/Amper.jsx'));
 const Flint = lazy(() => import('../pages/projects/Flint.jsx'));
 const LMWN = lazy(() => import('../pages/projects/LMWN.jsx'));
+const NoPage = lazy(() => import('../pages/NoPage/NoPage.jsx'))
 
 export default function Project() {
     return(
         <Suspense fallback={<Loading />}>
             <Routes>
-                <Route path="/" element={<Portfolio />}/>
+                <Route path="*" element={<NoPage />}/>
                 <Route path="/nimbus" element={<Nimbus />}/>
                 <Route path="/amper" element={<Amper />}/>
                 <Route path="/flint" element={<Flint />}/>

@@ -9,7 +9,7 @@ import { ThemeContext } from "../../context/ThemeContext.jsx";
 import Icon from '../Icon/Icon.jsx'
 
 // Lucide
-import { Eclipse, ArrowRight } from 'lucide-react';
+import { LampDesk, ArrowRight } from 'lucide-react';
 
 export default function Card({ children = "Title", description = "Description", modeSupport = false, onClick, thumbnailType = "image", lightSrc, darkSrc, gradient = "false", gradientSrc, thumbnailClass, alt }) {
     const { darkMode } = useContext(ThemeContext);
@@ -33,7 +33,7 @@ export default function Card({ children = "Title", description = "Description", 
                             <h2 className="text-xl text-neutral-primary">{children}</h2>
                             {modeSupport && (
                                 <Icon>
-                                    <Eclipse className="icon-subtle" size={24} />
+                                    <LampDesk className="icon-subtle" size={24} />
                                 </Icon>
                             )}
                         </div>

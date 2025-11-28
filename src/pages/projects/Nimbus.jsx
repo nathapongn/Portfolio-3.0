@@ -2,9 +2,8 @@
 import Cover from '../../components/Cover/Cover.jsx'
 import ColumnLayout from '../../components/Section/ColumnLayout.jsx';
 import Copy from '../../components/Section/Copy.jsx';
+import MediaBlock from '../../components/MediaBlock/MediaBlock.jsx';
 
-// Lucide
-import { Smile } from 'lucide-react';
 
 // Assets
 import assets from '../../assets/projects/nimbus/index.js';
@@ -18,6 +17,7 @@ export default function Nimbus() {
                     darkSrc={assets.cover.dark}
                     lightSrcMobile={assets.coverMobile.light}
                     darkSrcMobile={assets.coverMobile.dark}
+                    modeSupport={true}
                 />
                 <ColumnLayout>
                     <Copy
@@ -48,6 +48,7 @@ export default function Nimbus() {
                         cols="3"
                     />
                 </ColumnLayout>
+                <MediaBlock />
             </main>
         </>
     )

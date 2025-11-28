@@ -12,7 +12,7 @@ import Wrapper from '../Wrapper/Wrapper.jsx'
 // Lucide
 import { LampDesk } from 'lucide-react';
 
-export default function Cover({className, lightSrc, darkSrc, lightSrcMobile, darkSrcMobile, alt}) {
+export default function Cover({className, modeSupport=false, lightSrc, darkSrc, lightSrcMobile, darkSrcMobile, alt}) {
     const { darkMode } = useContext(ThemeContext);
 
     const mediaSrc = (darkMode ? (darkSrc || lightSrc) : lightSrc);
@@ -25,15 +25,20 @@ export default function Cover({className, lightSrc, darkSrc, lightSrcMobile, dar
                 <img className="cover-media" src={mediaSrc} alt={alt}/>
             </picture>
             <Divider />
-            <div className="mode-support-banner">
-                <Wrapper>
-                    <div className="mode-support-banner-content">
-                        <LampDesk className="icon-subtle"/>
-                        <p className="text-neutral-placeholder text-s">This project can be viewed in both light and dark mode.</p>
+            {modeSupport &&
+                <>
+                    <div className="mode-support-banner">
+                    <Wrapper>
+                        <div className="mode-support-banner-content">
+                            <LampDesk className="icon-subtle"/>
+                            <p className="text-neutral-placeholder text-s">This project can be viewed in both light and dark mode.</p>
+                        </div>
+                        </Wrapper>
                     </div>
-                </Wrapper>
-            </div>
-            <Divider />
+                    <Divider />
+                </>
+            }
+            
         </section>
     )
 }
