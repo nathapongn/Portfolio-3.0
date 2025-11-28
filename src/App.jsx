@@ -15,6 +15,7 @@ import Loading from './pages/Loading/Loading.jsx'
 const Portfolio = lazy(() => import('./pages/Portfolio/Portfolio.jsx'));
 const About = lazy(() => import('./pages/About.jsx'));
 const NoPage = lazy(() => import('./pages/NoPage/NoPage.jsx'));
+const Project = lazy(() => import('./pages/Project.jsx'));
 
 function ThemeBody({children}) {
   const { darkMode } = useContext(ThemeContext);
@@ -38,6 +39,7 @@ function App() {
                 <Route path="/" element={<Portfolio />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<NoPage />} />
+                <Route path="/project/*" element={<Project />}/>
               </Routes>
               </Suspense>
               <Footer />

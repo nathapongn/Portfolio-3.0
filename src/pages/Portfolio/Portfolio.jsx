@@ -5,10 +5,14 @@ import './Portfolio.css';
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Card from '../../components/Card/Card.jsx';
 
+// React
+import { useNavigate } from "react-router-dom"
+
 // Assets
 import assets from '../../assets/thumbnails/index.js'
 
 export default function Portfolio() {
+    const navigate = useNavigate();
 
     return(
         <main>
@@ -32,6 +36,7 @@ export default function Portfolio() {
                         darkSrc={assets.nimbusDark}
                         lightSrc={assets.nimbusLight}
                         thumbnailClass="nimbus"
+                        onClick={() => navigate("project/nimbus")}
                         >Nimbus
                         </Card>
 
@@ -42,6 +47,7 @@ export default function Portfolio() {
                         darkSrc={assets.flintDark}
                         lightSrc={assets.flintLight}
                         thumbnailClass="flint"
+                        onClick={() => navigate("project/flint")}
                         >Flint
                         </Card>
 
@@ -52,6 +58,7 @@ export default function Portfolio() {
                         gradient={true}
                         gradientSrc={assets.amperGradient}
                         thumbnailClass="amper"
+                        onClick={() => navigate("project/amper")}
                         >Amper
                         </Card>
                         <Card 
@@ -61,6 +68,7 @@ export default function Portfolio() {
                         gradient={true}
                         gradientSrc={assets.lmwnGradient}
                         thumbnailClass="lmwn"
+                        onClick={() => navigate("project/lmwn")}
                         >LINE MAN Wongnai
                         </Card>
                     </div>

@@ -11,12 +11,12 @@ import Icon from '../Icon/Icon.jsx'
 // Lucide
 import { Eclipse, ArrowRight } from 'lucide-react';
 
-export default function Card({ children = "Title", description = "Description", modeSupport = false, thumbnailType = "image", lightSrc, darkSrc, gradient = "false", gradientSrc, thumbnailClass, alt }) {
+export default function Card({ children = "Title", description = "Description", modeSupport = false, onClick, thumbnailType = "image", lightSrc, darkSrc, gradient = "false", gradientSrc, thumbnailClass, alt }) {
     const { darkMode } = useContext(ThemeContext);
     
     return(
         <>
-            <div className="card">
+            <a className="card" onClick={onClick}>
                 <div className={`card-thumbnail ${thumbnailClass}`}>
                     {thumbnailType === "video" ? 
                     (<video src={darkMode ? (darkSrc || lightSrc) : lightSrc} autoPlay loop muted playsInline></video>) 
@@ -44,7 +44,7 @@ export default function Card({ children = "Title", description = "Description", 
                             </Icon>
                     </div>
                 </div> 
-            </div>
+            </a>
         </>
     )
 }

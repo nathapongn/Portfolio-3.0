@@ -1,0 +1,22 @@
+.cover{
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cover-image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.mode-support-banner{
+    background-color: var(--surface-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
