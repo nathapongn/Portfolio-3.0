@@ -33,3 +33,8 @@
 .mode-support-banner p{
     width: 100%;
 }
+
+/* Custom Color */
+.cover.lmwn{
+    background: linear-gradient(67deg, #0577A4 20.54%, #27AC76 57.87%);
+}

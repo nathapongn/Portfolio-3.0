@@ -1,12 +1,20 @@
-import Wrapper from '../../components/Wrapper/Wrapper.jsx'
+import MediaBlock from '../../components/MediaBlock/MediaBlock.jsx'
+import Cover from '../../components/Cover/Cover.jsx'
+
+// Assets
+import assets from '../../assets/projects/lmwn/index.js';
 
 export default function Nimbus() {
     return (
         <>
             <main>
-                <Wrapper>
-                    
-                </Wrapper>
+                <Cover
+                    className="lmwn"
+                    lightSrc={assets.cover}
+                    lightSrcMobile={assets["cover-mobile"]}
+                />
+                <MediaBlock
+                ></MediaBlock>
             </main>
         </>
     )
