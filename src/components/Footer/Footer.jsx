@@ -24,7 +24,7 @@ export default function Footer() {
                             <p className="text-s text-neutral-secondary">Let's work together!</p>
                         </div>
                         <div className="footer-social-profile">
-                        <Icon>
+                        <Icon tooltip="Go to my Linkedin Profile">
                             <a 
                             href="https://www.linkedin.com/in/nathapongn/" 
                             target="_blank" 
@@ -33,7 +33,7 @@ export default function Footer() {
                             <Linkedin className="icon-enabled" />
                         </a>
                         </Icon>
-                        <Icon>
+                        <Icon tooltip="Go to my Github Profile">
                         <a 
                             href="https://github.com/nathapongn" 
                             target="_blank" 

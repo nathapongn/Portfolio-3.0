@@ -22,66 +22,66 @@
 
     --content-padding: 4vw;
 
-    --blue-100: #E9F2FFFF;
-    --blue-200: #CCE0FFFF;
-    --blue-300: #85B8FFFF;
-    --blue-400: #579DFFFF;
-    --blue-500: #388BFFFF;
-    --blue-600: #1D7AFCFF;
-    --blue-700: #0C66E4FF;
-    --blue-800: #0055CCFF;
-    --blue-900: #09326CFF;
-    --blue-1000: #1C2B41FF;
+    --blue-100: #E9F2FF;
+    --blue-200: #CCE0FF;
+    --blue-300: #85B8FF;
+    --blue-400: #579DFF;
+    --blue-500: #388BFF;
+    --blue-600: #1D7AFC;
+    --blue-700: #0C66E4;
+    --blue-800: #0055CC;
+    --blue-900: #09326C;
+    --blue-1000: #1C2B41;
 
-    --red-100: #FFECEBFF;
-    --red-200: #FFD5D2FF;
-    --red-300: #FD9891FF;
-    --red-400: #F87168FF;
-    --red-500: #F15B50FF;
-    --red-600: #E2483DFF;
-    --red-700: #C9372CFF;
-    --red-800: #AE2E24FF;
-    --red-900: #5D1F1AFF;
-    --red-1000: #42221FFF;
+    --red-100: #FFECEB;
+    --red-200: #FFD5D2;
+    --red-300: #FD9891;
+    --red-400: #F87168;
+    --red-500: #F15B50;
+    --red-600: #E2483D;
+    --red-700: #C9372C;
+    --red-800: #AE2E24;
+    --red-900: #5D1F1A;
+    --red-1000: #42221F;
 
-    --violet-100: #F3F0FFFF;
-    --violet-200: #E5DBFFFF;
-    --violet-300: #D0BFFFFF;
-    --violet-400: #B197FCFF;
-    --violet-500: #9775FAFF;
-    --violet-600: #845EF7FF;
-    --violet-700: #7950F2FF;
-    --violet-800: #7048E8FF;
-    --violet-900: #6741D9FF;
-    --violet-1000: #5F3DC4FF;
+    --violet-100: #F3F0FF;
+    --violet-200: #E5DBFF;
+    --violet-300: #D0BFFF;
+    --violet-400: #B197FC;
+    --violet-500: #9775FA;
+    --violet-600: #845EF7;
+    --violet-700: #7950F2;
+    --violet-800: #7048E8;
+    --violet-900: #6741D9;
+    --violet-1000: #5F3DC4;
 
-    --neutral-0: #FFFFFFFF;
-    --neutral-100: #F7F8F9FF;
-    --neutral-200: #F1F2F4FF;
-    --neutral-300: #DCDFE4FF;
-    --neutral-400: #B3B9C4FF;
-    --neutral-500: #8590A2FF;
-    --neutral-600: #758195FF;
-    --neutral-700: #626F86FF;
-    --neutral-800: #44546FFF;
-    --neutral-900: #2C3E5DFF;
-    --neutral-1000: #172B4DFF;
-    --neutral-1100: #091E42FF;
-    
-    --darkneutral-0: #161a1d;
-    --darkneutral-100: #1D2125FF;
-    --darkneutral-200: #22272BFF;
-    --darkneutral-250: #282E33FF;
-    --darkneutral-300: #2C333AFF;
-    --darkneutral-350: #38414AFF;
-    --darkneutral-400: #454F59FF;
-    --darkneutral-500: #596773FF;
-    --darkneutral-600: #738496FF;
-    --darkneutral-700: #8C9BABFF;
-    --darkneutral-800: #9FADBCFF;
-    --darkneutral-900: #B6C2CFFF;
-    --darkneutral-1000: #C7D1DBFF;
-    --darkneutral-1100: #DEE4EAFF;
+    --neutral-0: #FFFFFF;
+    --neutral-100: #F7F8F9;
+    --neutral-200: #F1F2F4;
+    --neutral-300: #DCDFE4;
+    --neutral-400: #B3B9C4;
+    --neutral-500: #8590A2;
+    --neutral-600: #758195;
+    --neutral-700: #626F86;
+    --neutral-800: #44546F;
+    --neutral-900: #2C3E5D;
+    --neutral-1000: #172B4D;
+    --neutral-1100: #091E42;
+
+    --darkneutral-0: #161A1D;
+    --darkneutral-100: #1D2125;
+    --darkneutral-200: #22272B;
+    --darkneutral-250: #282E33;
+    --darkneutral-300: #2C333A;
+    --darkneutral-350: #38414A;
+    --darkneutral-400: #454F59;
+    --darkneutral-500: #596773;
+    --darkneutral-600: #738496;
+    --darkneutral-700: #8C9BAB;
+    --darkneutral-800: #9FADBC;
+    --darkneutral-900: #B6C2CF;
+    --darkneutral-1000: #C7D1DB;
+    --darkneutral-1100: #DEE4EA;
 
     --darkneutral-alpha-100: rgba(22, 26, 29, 0.05);
     --darkneutral-alpha-200: rgba(22, 26, 29, 0.09);
@@ -116,7 +116,9 @@
     --divider: var(--darkneutral-alpha-200);
 
     --transition-1: 150ms cubic-bezier(0.215,0.61,0.355,1);
-    --transition-2: 300ms cubic-bezier(0.33,1,0.68,1)
+    --transition-2: 300ms cubic-bezier(0.33,1,0.68,1);
+
+    --elavation-1: box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 /* DARK MODE */
@@ -135,8 +137,8 @@
     --text-neutral-primary: var(--darkneutral-1100);
     --text-neutral-secondary: var(--darkneutral-900);
     --text-neutral-placeholder: var(--darkneutral-700);
-    --text-inverted-primary: var(--darkneutral-1100);
-    --text-inverted-secondary: var(--darkneutral-900);
+    --text-inverted-primary: var(--darkneutral-0);
+    --text-inverted-secondary: var(--darkneutral-400);
 
     --accent: var(--blue-500);
     --accent-hover: var(--blue-800);

@@ -1,5 +1,14 @@
-.icon{
+.icon, .icon-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.tooltip-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 140%;
 }

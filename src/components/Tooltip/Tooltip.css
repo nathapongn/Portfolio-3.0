@@ -1,10 +1,25 @@
 .tooltip{
     display: flex;
     flex-direction: row;
-    text-align: center;
     align-items: center;
+    text-align: center;
     justify-content: center;
     padding: var(--spacing-xxs);
     background-color: var(--surface-inverted-0);
-    border-radius: var(--radius-s);
+    border-radius: var(--radius-xs);
+    z-index: 100;
+    position: relative;
+    white-space: nowrap;
+    box-shadow: var(--elevation-1);
+}
+
+.tooltip-pointer{
+    background-color: var(--surface-inverted-0);
+    rotate: 45deg;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 100;
+    bottom: -4px;
+    border-radius: var(--radius-xs);
 }
