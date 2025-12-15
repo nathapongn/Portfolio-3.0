@@ -4,7 +4,10 @@
     gap: var(--spacing-xxs);
     align-items: flex-start;
     flex: 1;
-    max-width: 100%;
+    white-space: pre-line;
+}
+.copy h1, .copy p{
+    width: 100%;
 }
 .copy-icon{
     margin-bottom: var(--spacing-xxs);
@@ -18,7 +21,15 @@
     width: 100%;
     align-items: center;
     max-width: 75ch;
-    text-align: center;
+}
+.copy-align-center{
+    text-align: center
+}
+.copy-align-left{
+    text-align: left
+}
+.copy-align-right{
+    text-align: right
 }
 
 .section-header{
