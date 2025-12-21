@@ -91,6 +91,3 @@
 .card-thumbnail.nimbus{
     padding: var(--spacing-xl);
 }
-.card-thumbnail.amper{
-    align-items: flex-end;
-}

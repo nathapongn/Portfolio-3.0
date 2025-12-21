@@ -12,6 +12,7 @@ export default function About() {
                         <MediaBlock 
                             title="A little about me"
                             description={`I'm Nat, a UX Designer based in Bangkok with a background in architecture with 4+ years of experience. I currently design at SCB (Siam Commercial Bank), one of Thailand's largest financial institutions.
+                            
                             At SCB, I am primarily responsible for designing internal tools that support bank staff and RMs in their daily operations, alongside customer-facing business banking platforms that serve the financial needs of thousands of companies—from SMEs to the country's largest corporations.`}
                             lightSrc={assets.about["1"]}
                         />
