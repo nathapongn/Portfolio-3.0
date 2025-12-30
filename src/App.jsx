@@ -9,6 +9,7 @@ import { ThemeContext, ThemeContextProvider } from './context/ThemeContext.jsx'
 // Components
 import Header from './components/primitives/Header/Header.jsx'
 import Footer from './components/primitives/Footer/Footer.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 // Pages
 import Loading from './pages/Loading/Loading.jsx'
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
           <ThemeContextProvider>
             <ThemeBody>
               <Header />
