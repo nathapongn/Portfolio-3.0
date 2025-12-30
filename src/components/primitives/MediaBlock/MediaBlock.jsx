@@ -8,11 +8,12 @@ export default function MediaBlock({
   showLabel = true,
   title = "",
   titleSize = "text-xl",
-  description = "Description",
+  description = "",
   descriptionSize = "text-m",
   mediaType = "image",
   lightSrc,
   darkSrc,
+  mediaBackground = "transparent",
   withWrapper=true,
   mirror = false,
   orientation = "horizontal",
@@ -27,7 +28,7 @@ export default function MediaBlock({
 
     const content = (
             <div className={`media-block ${mirror ? "mirror" : ""} ${orientation} col-span-${cols}`}>
-                <div className={`media-wrapper ${mediaType === "video" ? "video" : "image"} ${padding}`}>
+                <div className={`media-wrapper ${mediaType === "video" ? "video" : "image"} ${padding} ${mediaBackground}`}>
                     {mediaType === "video" ? 
                     <video className="media-video" src={darkMode ? (darkSrc || lightSrc): lightSrc} autoPlay loop muted playsInline /> 
                     : 
@@ -38,7 +39,7 @@ export default function MediaBlock({
                 <div className="media-label">
                     {caption != '' && <p className="media-text-s strong accent">{caption}</p>}
                     {title != '' && <h1 className={`${orientation === "vertical" ? "text-l" : titleSize} text-neutral-primary`}>{title}</h1>}
-                    <p className={`${descriptionSize} text-neutral-secondary`}>{description}</p>
+                    {description != '' && <p className={`${descriptionSize} text-neutral-secondary`}>{description}</p>}
                 </div> : null
                 }
             </div>

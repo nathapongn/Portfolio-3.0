@@ -11,9 +11,9 @@ export default function Context() {
     return (
         <>
             <MediaBlock 
-                    caption={copy.context.caption}
-                    title={copy.context.title}
-                    description={copy.context.description}
+                    caption={copy.problem.caption}
+                    title={copy.problem.title}
+                    description={copy.problem.description}
                     lightSrc={assets.problem.light.image}
                     darkSrc={assets.problem.dark.image}
                 />

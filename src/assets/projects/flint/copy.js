@@ -13,28 +13,28 @@ const copy = {
     },
   },
 
-  context: {
+  problem: {
     caption: "Problem",
     title: "Most of us aren't investing",
-    description: `According to 2022 statistics from the Bank of Thailand, the majority of Thais do not invest their money. This is mainly due to a knowledge gap in investments, high cost of entry, and a general lack of financial literacy.
-
-For reference, despite launching their first exchange more than 25 years later, over 8% of Vietnam's population already invests in stocks.`,
+    description: `According to 2022 statistics from the Bank of Thailand, the majority of Thais do not invest their money. This is mainly due to a knowledge gap in investments, high cost of entry, and a general lack of financial literacy. 
+    
+    For reference, despite launching their first exchange more than 25 years later, over 8% of Vietnam's population already invests in stocks.`,
   },
 
-  statistics: {
-    header: "Out of 70M people, only",
-    items: [
+  stats: {
+    title: "Out of 70M people, only",
+    item: [
       {
-        value: "3%",
-        label: "invest in financial products",
+        title: "3%",
+        description: "invest in financial products",
       },
       {
-        value: "3M",
-        label: "brokerage accounts",
+        title: "3M",
+        description: "brokerage accounts",
       },
       {
-        value: "1.5M",
-        label: "mutual fund accounts",
+        title: "1.5M",
+        description: "mutual fund accounts",
       },
     ],
   },
@@ -42,17 +42,17 @@ For reference, despite launching their first exchange more than 25 years later, 
   designQuestion:
     "How might design help make investing more appealing and accessible?",
 
-  competitiveAnalysis: {
+  competitive: {
     caption: "Challenge",
     title: "Competitive Analysis",
     description: `Since 2009, Streaming has been Thailand's primary stock investing application. While its current design may appeal to experienced traders familiar with its decades-old interface, it presents significant hurdles for new investors.
 
-These challenges include a steep learning curve, an overwhelming and unintuitive interface that still lacks essential information, limited investment opportunities, a slow deposit and withdrawal process, and more.`,
+    These challenges include a steep learning curve, an overwhelming and unintuitive interface that still lacks essential information, limited investment opportunities, a slow deposit and withdrawal process, and more.`,
   },
 
   painPoints: {
     title: "Pain Points",
-    items: [
+    item: [
       {
         title: "Uninformative Interface",
         description:
@@ -97,50 +97,48 @@ These challenges include a steep learning curve, an overwhelming and unintuitive
       "Reducing reliance on external sources of information empowers users to make well-informed choices.",
   },
 
-  solution: {
-    title: "Design Solution",
+  design_solution: "Design Solution",
 
-    home: {
-      caption: "Personalized",
-      title: "Home",
-      description:
-        "A distraction-free environment that allows users to stay on top of their investments, track goals, read the latest articles, and view upcoming events such as dividend payout dates, economic data releases, and earnings reports—personalized to their holdings and watchlists.",
-    },
+  home: {
+    caption: "Personalized",
+    title: "Home",
+    description:
+      "A distraction-free environment that allows users to stay on top of their investments, track goals, read the latest articles, and view upcoming events such as dividend payout dates, economic data releases, and earnings reports—personalized to their holdings and watchlists.",
+  },
 
-    investing: {
-      caption: "Accessible",
-      title: "Investing",
-      description:
-        "Odd lot purchases (orders of fewer than 100 shares) are integrated into Thai stock investing. Enhancing the transparency of the odd lot feature makes high-priced large-cap stocks more accessible and reduces the risk of investors feeling compelled to invest in lower-priced, often more volatile, stocks.",
-    },
+  inv: {
+    caption: "Accessible",
+    title: "Investing",
+    description:
+      "Odd lot purchases (orders of fewer than 100 shares) are integrated into Thai stock investing. Enhancing the transparency of the odd lot feature makes high-priced large-cap stocks more accessible and reduces the risk of investors feeling compelled to invest in lower-priced, often more volatile, stocks.",
+  },
 
-    information: {
-      caption: "Insightful",
-      title: "Securities Information",
-      description:
-        "Each security includes extensive statistical and financial information. Trading jargon, abbreviations, and symbols are accompanied by informative bottom sheets that open with a tap, ensuring investors stay well-informed while reducing the need for external sources.",
-    },
+  info: {
+    caption: "Insightful",
+    title: "Securities Information",
+    description:
+      "Each security includes extensive statistical and financial information. Trading jargon, abbreviations, and symbols are accompanied by informative bottom sheets that open with a tap, ensuring investors stay well-informed while reducing the need for external sources.",
+  },
 
-    wallet: {
-      caption: "Instantaneous",
-      title: "Wallet",
-      description:
-        "Users can invest directly from their wallet's available balance or spend from their cash balance via bank transfer, QR payment, and cash card—eliminating the 1–2 business day withdrawal process of a typical brokerage account.",
-    },
+  wallet: {
+    caption: "Instantaneous",
+    title: "Wallet",
+    description:
+      "Users can invest directly from their wallet's available balance or spend from their cash balance via bank transfer, QR payment, and cash card—eliminating the 1–2 business day withdrawal process of a typical brokerage account.",
+  },
 
-    cashCard: {
-      caption: "Convenient",
-      title: "Cash Card",
-      description:
-        "Flint's cash card provides a hassle-free way to spend or withdraw cash from an ATM directly from the THB cash balance. Real-time access to the cash balance makes deposit commitments less intimidating for beginners.",
-    },
+  card: {
+    caption: "Convenient",
+    title: "Cash Card",
+    description:
+      "Flint's cash card provides a hassle-free way to spend or withdraw cash from an ATM directly from the THB cash balance. Real-time access to the cash balance makes deposit commitments less intimidating for beginners.",
   },
 
   alerts: {
     title: "Alert Bottom Sheet",
     description:
       "Automatically opens when users enter a security that requires additional acknowledgment.",
-    items: [
+    item: [
       "Market Surveillance Alert",
       "Tax Benefit Fund (SSF & RMF)",
       "High Risk Equity",
@@ -155,7 +153,7 @@ These challenges include a steep learning curve, an overwhelming and unintuitive
     title: "Reflection",
     description: `This project was inspired by challenges I faced when starting my investing journey, along with similar experiences shared by others in social media investment groups.
 
-Initially envisioned as a smaller project, further research revealed additional areas for improvement, leading to expanded solutions beyond UI enhancements. As the scope grew, I learned to build a comprehensive design system from scratch to ensure consistency and integrated motion design to further enhance the user experience.`,
+    Initially envisioned as a smaller project, further research revealed additional areas for improvement, leading to expanded solutions beyond UI enhancements. As the scope grew, I learned to build a comprehensive design system from scratch to ensure consistency and integrated motion design to further enhance the user experience.`,
   },
 };
 

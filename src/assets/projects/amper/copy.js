@@ -15,9 +15,11 @@ const copy = {
         caption: "Problem",
         title: "Fragmented Networks",
         description: [
-            "As electric vehicles rapidly gain popularity in Thailand, so does the expansion of public EV chargers. But with growth comes fragmentation.",
-            "Each charging provider operates its own app—with different interfaces, user journeys, and payment methods. Drivers are forced to relearn how to charge depending on where they go.",
-            "For many EV drivers, the biggest obstacle isn't finding a charger—it's navigating the messy ecosystem around it."
+            `As electric vehicles rapidly gain popularity in Thailand, so does the expansion of public EV chargers. But with growth comes fragmentation.
+
+            Each charging provider operates its own app—with different interfaces, user journeys, and payment methods. Drivers are forced to relearn how to charge depending on where they go.
+
+            For many EV drivers, the biggest obstacle isn't finding a charger—it's navigating the messy ecosystem around it.`
         ]
     },
 
@@ -46,7 +48,9 @@ const copy = {
         caption: "Objective",
         title: "Unify Public EV Chargers",
         description:
-            "Amper simplifies EV charging in Thailand by unifying fragmented networks into a single platform—allowing drivers to discover, book, and charge across providers in one app. It makes charging more transparent and reliable by empowering users with reviews, issue reports, and community-driven updates."
+            `Amper aims to simplify EV charging in Thailand by unifying fragmented networks into a single platform—allowing drivers to discover, book, and charge across providers in one app. 
+            
+            It makes charging more transparent and reliable by empowering users with reviews, issue reports, and community-driven updates.`
     },
 
     providerStudy: {
@@ -138,8 +142,9 @@ const copy = {
         caption: "Station Details",
         title: "Transparent and Reliable",
         description: [
-            "Each station page provides standardized, real-time information including status, available plug types, pricing structure, and operating hours—ensuring consistency across providers.",
-            "Community-powered features allow users to suggest corrections, report issues, confirm fixes, and leave reviews. By giving users a voice, Amper builds a more transparent and trustworthy charging ecosystem."
+            `Each station page provides standardized, real-time information including status, available plug types, pricing structure, and operating hours—ensuring consistency across providers.
+            
+            Community-powered features allow users to suggest corrections, report issues, confirm fixes, and leave reviews. By giving users a voice, Amper builds a more transparent and trustworthy charging ecosystem.`
         ]
     },
 
@@ -218,8 +223,9 @@ const copy = {
     reflection: {
         title: "Reflection",
         description: [
-            "Unifying public EV chargers was an idea I had been thinking about for some time but never fully pieced together until this project. It became the first project where I deeply considered not only on-screen journeys, but also the hardware and operational constraints shaping them.",
-            "What I initially expected to be a small project grew far more complex. Designing a consistent check-in experience across diverse providers challenged my assumptions and pushed my design thinking. Balancing real-world constraints, provider requirements, and user mental models ultimately made the project both demanding and deeply rewarding."
+            `Unifying public EV chargers was an idea I had been thinking about for some time but never fully pieced together until this project. It became the first project where I deeply considered not only on-screen journeys, but also the hardware and operational constraints shaping them.
+            
+            What I initially expected to be a small project grew far more complex. Designing a consistent check-in experience across diverse providers challenged my assumptions and pushed my design thinking. Balancing real-world constraints, provider requirements, and user mental models ultimately made the project both demanding and deeply rewarding.`
         ]
     }
 }

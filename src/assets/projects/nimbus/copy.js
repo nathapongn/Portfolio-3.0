@@ -11,7 +11,7 @@ const copy = {
             description: "Individual Project"
         }
     },
-    context: {
+    problem: {
         caption: "Problem",
         title: "Not Quite Right",
         description: "Since I began tracking my personal finances, I've struggled to find a single app that meets all my needs. One app might excel at a particular feature but lacks another feature that a competing app does well. Moreover, the inconvenience of manually recording all my transactions has been a persistent challenge."
@@ -98,7 +98,9 @@ const copy = {
     style_guide: "Style Guide",
     reflection: {
         title: "Reflection",
-        description: "Nimbus stands out as the most challenging and intricate personal design project I've undertaken. From initial scoping to countless sketching iterations, the process required an additional level of depth and precision. Designing for both light and dark modes for the first time demanded a highly systematic approach to primitives and semantic tokenization. This project was also one of the most iterative I've ever worked on, often requiring me to revisit the drawing board more than anticipated. Ultimately, the experience profoundly shaped my growth as a designer, strengthening my ability to approach projects with a structured mindset and improving how I tackle complex design challenges in my professional practice."
+        description: `Nimbus stands out as the most challenging and intricate personal design project I've undertaken. From initial scoping to countless sketching iterations, the process required an additional level of depth and precision. Designing for both light and dark modes for the first time demanded a highly systematic approach to primitives and semantic tokenization. 
+        
+        This project was also one of the most iterative I've ever worked on, often requiring me to revisit the drawing board more than anticipated. Ultimately, the experience profoundly shaped my growth as a designer, strengthening my ability to approach projects with a structured mindset and improving how I tackle complex design challenges in my professional practice.`
     }
 };
 
