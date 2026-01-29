@@ -1,5 +1,5 @@
 // Components
-import MediaBlock from "../../../../components/primitives/MediaBlock/MediaBlock";
+import MediaBlock from "../../../../components/primitives/MediaBlock/MediaBlock.jsx";
 import ColumnLayout from "../../../../components/primitives/Section/ColumnLayout.jsx";
 import Copy from "../../../../components/primitives/Section/Copy.jsx";
 import SectionHeader from "../../../../components/patterns/SectionHeader.jsx"

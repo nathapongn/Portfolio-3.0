@@ -6,9 +6,10 @@ import Wrapper from '../Wrapper/Wrapper.jsx'
 import Divider from '../Divider/Divider.jsx'
 import Tab from '../Tab/Tab.jsx'
 import ButtonIcon from '../ButtonIcon/ButtonIcon.jsx'
+import ScrollProgress from '../ScrollProgress/ScrollProgress.jsx'
 
 // React
-import { useNavigate, Link } from 'react-router-dom'; 
+import { useNavigate, Link, useLocation } from 'react-router-dom'; 
 import { useState, useContext } from 'react';
 import { ThemeContext } from '../../../context/ThemeContext.jsx';
 
@@ -18,7 +19,7 @@ import { Sun, Moon, Menu, X } from 'lucide-react';
 // Assets
 import assets from '../../../assets/site/index.js'
 
-export default function Header() {
+export default function Header({ scrollProgress = false }) {
     const navigate = useNavigate();
 
     const { darkMode, toggleDarkMode } = useContext(ThemeContext);
@@ -27,6 +28,10 @@ export default function Header() {
     function toggleMenu() {
         setMenuOpen(prev => !prev);
     }
+
+    const location = useLocation();
+
+    const showScrollProgress = location.pathname.startsWith('/project')
 
     return(
         <nav className="navigation">
@@ -52,6 +57,8 @@ export default function Header() {
                 <Tab to="/about" onClick={() => navigate("/about")}>About</Tab>
                 <ButtonIcon hoveredIcon={darkMode ? <Sun /> : <Moon />} onClick={() => toggleDarkMode()}>{darkMode ? <Sun /> : <Moon /> }</ButtonIcon>
             </div>}
+            {showScrollProgress && <ScrollProgress />}
+            <Divider />
         </nav>
     )
 }
